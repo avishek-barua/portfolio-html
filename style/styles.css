@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Pacifico&display=swap");
+:root {
+  --background: #514b7c;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +13,14 @@ body {
     rgba(106, 106, 152, 0.1),
     rgba(106, 106, 152, 0.1)
   );
+  font-family: "Corben", serif;
 }
 header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background: #514b7c;
+  background: var(--background);
   padding: 2rem;
   border-radius: 20px;
 }
@@ -25,22 +30,83 @@ header img {
   background-size: cover;
   border-radius: 50%;
 }
-header .header-info {
+.header-info {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 0 2em;
 }
-header ul {
+.header-info h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+
+  color: white;
+}
+.header-info p {
+  font-size: 24px;
+  color: #ebe4f5;
+}
+.header-info ul {
   list-style: none;
   display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
-header button{
-    background: #B39BB5;
-    width: 10rem;
-    height: 3rem;
-    border-radius: 25px;
-    border: none;
-    padding: 10px;
+.header-info ul li {
+  font-size: 25px;
+  color: #b39bb5;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 2px solid #b39bb5;
+  border-radius: 50%;
+}
+.header-info ul li:hover {
+  background: #b39bb5;
+  color: #ebe4f5;
+}
+.header-info ul li ion-icon {
+  margin: 0 12px;
+}
+.cv-btn {
+  background: #b39bb5;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 25px;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-family: "Corben", serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.cv-btn:hover {
+  background: none;
+  color: #b39bb5;
+  border: 2px solid #b39bb5;
+}
+.cv-btn ion-icon {
+  font-size: 15px;
+}
+main {
+  width: 100%;
+}
+nav {
+  background: var(--background);
+  margin-top: 15px;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+.nav-btns {
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
+.nav-btns li{
+    margin-right: 10px;
+    background: #b39bb5;
+    padding: 0 20px;
+    border-radius: 20px;
+}
