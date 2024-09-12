@@ -88,9 +88,6 @@ header img {
 .cv-btn ion-icon {
   font-size: 15px;
 }
-main {
-  width: 100%;
-}
 nav {
   background: var(--background);
   margin-top: 15px;
@@ -104,9 +101,20 @@ nav {
   align-items: center;
 }
 
-.nav-btns li{
-    margin-right: 10px;
-    background: #b39bb5;
-    padding: 0 20px;
-    border-radius: 20px;
+.nav-btns li {
+  margin-right: 10px;
+  background: #b39bb5;
+  padding: 0 20px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  vertical-align:baseline;
+}
+
+main {
+  padding: 2rem;
+  margin-top: 15px;
+  width: 100%;
+
+  background: var(--background);
+  border-radius: 20px;
 }
