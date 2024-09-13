@@ -137,6 +137,13 @@ nav .nav-btns li:hover {
   background: #C8A1E0;
 }
 
+nav .nav-btns li.active {
+  border-radius: 20px 20px 0 0;
+}
+
+nav .nav-btns li.active:hover {
+  background: #dec7f1;
+}
 
 main {
   margin-top: 10px;
@@ -146,6 +153,33 @@ main {
   border-radius: 20px;
   color: #f1e6f8;
   box-shadow: rgb(0 0 0 / 86%) 0px 18px 50px -10px;
+  position: relative;
+}
+
+main .curve {
+  position: absolute;
+  display: flex;
+  top: -35px;
+  align-items: end;
+}
+
+main .middle {
+  width: 65px;
+  height: 55px;
+  background: #dec7f1;
+}
+
+main .middle::after {
+  --border-radius: 1rem;
+  content: '';
+  position: absolute;
+  width: var(--border-radius);
+  height: var(--border-radius);
+  background: #674188;
+  bottom: 0;
+  border-radius: 0 0 0 100vw;
+  right: calc(var(--border-radius)* -1);
+  box-shadow: -5px 5px 0px 5px #dec7f1;
 }
 
 
@@ -155,6 +189,10 @@ main .content {
   border-radius: 20px;
   box-shadow: rgb(111 88 88 / 86%) 0px 18px 50px -10px;
   color: #26033b;
+}
+
+main .content.active {
+  border-radius: 0 20px 20px 20px;
 }
 
 main .content p {
