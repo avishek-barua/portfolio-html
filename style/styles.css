@@ -189,10 +189,17 @@ main .content {
   border-radius: 20px;
   box-shadow: rgb(111 88 88 / 86%) 0px 18px 50px -10px;
   color: #26033b;
+  display: none;
 }
 
-main .content.active {
+main .content.active.first {
   border-radius: 0 20px 20px 20px;
+  /* transition: all .3s ease; */
+}
+
+main .content.first {
+  border-radius: 20px;
+  transition: all .3s ease;
 }
 
 main .content p {

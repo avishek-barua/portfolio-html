@@ -25,21 +25,72 @@
 
   <nav class="nav">
     <ul class="nav-btns">
-      <li class="active">about</li>
-      <li>skills</li>
-      <li>projects</li>
-      <li>experiences</li>
-      <li>contact me</li>
+      <li class="tablink active" onclick="openPage('about')">about</li>
+      <li class="tablink" onclick="openPage('skills')">skills</li>
+      <li class="tablink" onclick="openPage('experiences')" id="defaultOpen">experiences</li>
+      <li class="tablink" onclick="openPage('projects')">projects</li>
+      <li class="tablink" onclick="openPage('contact')">contact me</li>
     </ul>
   </nav>
   <main>
     <div class="curve">
       <div class="middle"></div>
     </div>
-    <div class="content active">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam inventore nostrum. Autem cupiditate id
-        quibusdam iusto explicabo vitae quaerat dolorem ratione dolore, laborum cumque adipisci fugiat. Dolor, facere
-        inventore.</p>
+    <div class="content active first" id="about">
+      <p>about</p>
+    </div>
+    <div class="content " id="skills">
+      <p>skills</p>
+    </div>
+    <div class="content " id="experiences">
+      <div class="details-card">
+        <div class="left">
+          <h2>Company Name</h2>
+          <p>Job Title</p>
+        </div>
+        <div class="right">
+          Responsibilities
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
+          </ul>
+        </div>
+      </div>
+      <div class="details-card">
+        <div class="left">
+          <h2>Company Name</h2>
+          <p>Job Title</p>
+        </div>
+        <div class="right">
+          Responsibilities
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
+          </ul>
+        </div>
+      </div>
+      <div class="details-card">
+        <div class="left">
+          <h2>Company Name</h2>
+          <p>Job Title</p>
+        </div>
+        <div class="right">
+          Responsibilities
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content " id="projects">
+      <p>projects</p>
+    </div>
+    <div class="content " id="contact">
+      <p>contact</p>
     </div>
   </main>
 
