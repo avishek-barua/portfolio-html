@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Corben';
+  font-family: "Corben";
 }
 
 ::-webkit-scrollbar {
@@ -23,10 +23,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #C8A1E0;
+  background-color: #c8a1e0;
   background-clip: padding-box;
   border-radius: 99999px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -60,7 +60,7 @@ header {
   align-items: center;
   padding: 20px;
   background: #674188;
-  border: 2px solid #C8A1E0;
+  border: 2px solid #c8a1e0;
   border-radius: 20px;
   gap: 20px;
 }
@@ -89,15 +89,17 @@ header .header-info {
 header .header-info h1 {
   font-size: 50px;
   color: #f1e6f8;
-  font-family: 'Pacifico', cursive;
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  font-family: "Pacifico", cursive;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 header .header-info p {
   font-size: 20px;
   color: #f1e6f8;
-  font-family: 'Corben';
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  font-family: "Corben";
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 header .social-list {
@@ -116,7 +118,7 @@ header .social-list li {
 }
 
 header .social-list li:hover {
-  background: #C8A1E0;
+  background: #c8a1e0;
 }
 
 header .cv-btn {
@@ -127,7 +129,7 @@ header .cv-btn {
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   background: #dec7f1;
   border: 1px solid #dec7f1;
   color: #26033b;
@@ -135,14 +137,14 @@ header .cv-btn {
 }
 
 header .cv-btn:hover {
-  background: #C8A1E0;
+  background: #c8a1e0;
 }
 
 nav {
   width: 100%;
   margin-top: 10px;
   background: #674188;
-  border: 2px solid #C8A1E0;
+  border: 2px solid #c8a1e0;
   border-radius: 20px;
 }
 
@@ -160,19 +162,18 @@ nav .nav-btns li {
   background: #dec7f1;
   border-radius: 20px;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   color: #26033b;
   box-shadow: rgb(0 0 0 / 86%) 0px 18px 50px -10px;
   text-transform: capitalize;
 }
 
 nav .nav-btns li:hover {
-  background: #C8A1E0;
+  background: #c8a1e0;
 }
 
 nav .nav-btns li.active {
-
-  background: #C8A1E0;
+  background: #c8a1e0;
 }
 
 nav .nav-btns li.active:hover {
@@ -183,40 +184,12 @@ main {
   margin-top: 10px;
   padding: 20px;
   background: #674188;
-  border: 2px solid #C8A1E0;
+  border: 2px solid #c8a1e0;
   border-radius: 20px;
   color: #f1e6f8;
   box-shadow: rgb(0 0 0 / 86%) 0px 18px 50px -10px;
-  position: relative;
-  overflow-y: auto; 
+  overflow-y: auto;
 }
-
-main .curve {
-  position: absolute;
-  display: flex;
-  top: -35px;
-  align-items: end;
-}
-
-main .middle {
-  width: 65px;
-  height: 55px;
-  background: #dec7f1;
-}
-
-main .middle::after {
-  --border-radius: 1rem;
-  content: '';
-  position: absolute;
-  width: var(--border-radius);
-  height: var(--border-radius);
-  background: #674188;
-  bottom: 0;
-  border-radius: 0 0 0 100vw;
-  right: calc(var(--border-radius)* -1);
-  box-shadow: -5px 5px 0px 5px #dec7f1;
-}
-
 
 main .content {
   padding: 20px;
@@ -227,10 +200,9 @@ main .content {
   display: none;
 }
 
-
 main .content.first {
   border-radius: 20px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 main .content p {
@@ -240,10 +212,10 @@ main .content p {
 main .details-card {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
   margin: 10px 0;
-  border: 2px solid #C8A1E0;
+  border: 2px solid #c8a1e0;
   border-radius: 20px;
   padding: 10px 15px;
   background: #c082f3;
@@ -253,6 +225,23 @@ main .details-card .left {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+main .details-card .left h2 {
+  font-size: 20px;
+}
+
+main .details-card .right {
+  position: relative;
+}
+
+main .details-card .right::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #26033b;
+  border-radius: 10px;
+  height: 100%;
+  left: -20px;
 }
 
 @keyframes fadeInAnimation {
