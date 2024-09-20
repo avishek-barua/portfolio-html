@@ -1,38 +1,16 @@
-const navs = document.querySelectorAll('.nav-btns li');
-const curve = document.querySelector('.curve');
+document.addEventListener('DOMContentLoaded', () => {
+    const tablinks = document.querySelectorAll('.tablink');
+    const contents = document.querySelectorAll('.content');
 
+    tablinks.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tablinks.forEach(link => link.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
 
-navs.forEach((link) => {
-
-
-    link.addEventListener('click', function changeActive() {
-
-        navs.forEach((link) => {
-            link.classList.remove('active');
+            document.getElementById(tab.innerHTML.toLowerCase()).classList.add('active');
+            tab.classList.add('active');
         });
-        this.classList.add('active');
     });
 
-})
-
-
-function openPage(pageName) {
-    // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent;
-
-    tabcontent = document.getElementsByClassName("content");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-        tabcontent[i].classList.remove('active');
-    }
-
-
-
-    // Show the specific tab content
-    document.getElementById(pageName).style.display = "block";
-    document.getElementById(pageName).classList.add('active');
-
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+    document.querySelector('.tablink.active').click();
+});
