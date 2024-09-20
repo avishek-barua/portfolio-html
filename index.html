@@ -28,31 +28,29 @@
     </header>
     <nav class="nav">
       <ul class="nav-btns">
-        <li class="tablink active" onclick="openPage('about')">About</li>
-        <li class="tablink" onclick="openPage('skills')">Skills</li>
-        <li class="tablink" onclick="openPage('experiences')">Experiences</li>
-        <li class="tablink" onclick="openPage('projects')">Projects</li>
-        <li class="tablink" onclick="openPage('contact')">Contact Me</li>
+        <li class="tablink active" onclick="openPage('about', event)">about</li>
+        <li class="tablink" onclick="openPage('skills', event)">skills</li>
+        <li class="tablink" onclick="openPage('experiences', event)" id="defaultOpen">experiences</li>
+        <li class="tablink" onclick="openPage('projects', event)">projects</li>
+        <li class="tablink" onclick="openPage('contact', event)">contact me</li>
+
       </ul>
     </nav>
     <main>
-      <section class="content active" id="about">
-        <h2>About</h2>
-        <p>About me section content goes here...</p>
-      </section>
-      <section class="content" id="skills">
-        <h2>Skills</h2>
-        <p>Skills section content goes here...</p>
-      </section>
-      <section class="content" id="experiences">
-        <h2>Experiences</h2>
+      <div class="content active first" id="about">
+        <p>about</p>
+      </div>
+      <div class="content" id="skills">
+        <p>skills</p>
+      </div>
+      <div class="content" id="experiences">
         <div class="details-card">
           <div class="left">
-            <h3>Company Name</h3>
+            <h2>Company Name</h2>
             <p>Job Title</p>
           </div>
           <div class="right">
-            <h4>Responsibilities</h4>
+            Responsibilities
             <ul>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum!</li>
@@ -60,16 +58,15 @@
             </ul>
           </div>
         </div>
-        <!-- Repeat .details-card as needed -->
-      </section>
-      <section class="content" id="projects">
-        <h2>Projects</h2>
-        <p>Projects section content goes here...</p>
-      </section>
-      <section class="content" id="contact">
-        <h2>Contact</h2>
-        <p>Contact section content goes here...</p>
-      </section>
+        <!-- Repeat for other experiences -->
+      </div>
+      <div class="content" id="projects">
+        <p>projects</p>
+      </div>
+      <div class="content" id="contact">
+        <p>contact</p>
+      </div>
+      
     </main>
   </div>
   <script src="./js/app.js"></script>
