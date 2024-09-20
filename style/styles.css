@@ -34,7 +34,7 @@
 }
 
 html {
-  height: 100%;
+  /* height: 100%; */
 }
 
 ul {
@@ -43,7 +43,7 @@ ul {
 
 body {
   animation: fadeInAnimation ease 2s;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .container {
