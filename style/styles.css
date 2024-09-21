@@ -291,11 +291,12 @@ main #projects .details-card .right .project-link {
 
 main #projects .details-card .right .project-link a {
 
-  font-size: 20px;
+  font-size: 30px;
   background: var(--accent-color);
   padding: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.86) 0px 18px 50px -10px;
+  color: var(--dark-text);
 }
 
 @keyframes fadeInAnimation {
