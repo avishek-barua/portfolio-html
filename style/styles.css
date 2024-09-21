@@ -122,6 +122,11 @@ header .social-list li:hover {
   background: var(--accent-color);
 }
 
+header .social-list li ion-icon {
+  color: var(--dark-text);
+  /* font-size: 1.5rem; */
+}
+
 header .cv-btn {
   font-size: 1rem;
   padding: 10px 20px;
@@ -198,6 +203,8 @@ main .content {
   box-shadow: rgba(111, 88, 88, 0.86) 0px 18px 50px -10px;
   color: var(--dark-text);
   display: none;
+  overflow-y: auto;
+  height: 100%;
 }
 
 main .content.active {
@@ -210,8 +217,8 @@ main .content p {
 
 main .details-card {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  /* flex-direction: column; */
+  gap: 40px;
   margin: 10px 0;
   border: 2px solid var(--accent-color);
   border-radius: 20px;
@@ -278,10 +285,18 @@ main .details-card .right::before {
   main .details-card {
     flex-direction: column;
   }
+/* 
+  main .details-card .right{
+    border: 1px solid var(--dark-text);
+    border-radius: 10px;
+    padding: 12px;
+  } */
 
   main .details-card .right::before {
-    left: 0;
-    top: -20px;
-    width: 100%;
+    left: -10px;
+    top: -10px;
+    width: calc(100% + 15px);
+    height: calc(100% + 10px);
+    /* display: none; */
   }
 }

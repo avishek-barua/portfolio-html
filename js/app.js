@@ -14,5 +14,4 @@ function openPage(pageName, event) {
   
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("defaultOpen").click();
-  });
-  
+  });  
