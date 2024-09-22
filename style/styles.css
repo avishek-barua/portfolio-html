@@ -37,7 +37,8 @@
   background: #a870da;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: "Corben", sans-serif;
 }
@@ -94,6 +95,8 @@ header .header-info h1 {
   color: var(--text-color);
   font-family: "Pacifico", cursive;
   text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  letter-spacing: .3rem;
+  word-spacing: .5rem;
 }
 
 header .header-info p {
@@ -249,6 +252,55 @@ main .details-card .right::before {
   left: -20px;
 }
 
+
+main #projects .details-card .left {
+  width: 20%;
+}
+
+main #projects .details-card .left .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+main #projects .details-card .left .tech-stack li {
+  padding: 5px 10px;
+  background: var(--accent-color);
+  text-transform: capitalize;
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--dark-text);
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 18px 50px -10px;
+}
+
+main #projects .details-card .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+main #projects .details-card .right .projec-desc {
+  width: 80%;
+}
+
+main #projects .details-card .right .project-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+main #projects .details-card .right .project-link a {
+
+  font-size: 30px;
+  background: var(--accent-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 18px 50px -10px;
+  color: var(--dark-text);
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -285,18 +337,47 @@ main .details-card .right::before {
   main .details-card {
     flex-direction: column;
   }
-/* 
-  main .details-card .right{
+
+
+  main .details-card .right {
     border: 1px solid var(--dark-text);
     border-radius: 10px;
     padding: 12px;
-  } */
+  }
+
 
   main .details-card .right::before {
     left: -10px;
     top: -10px;
     width: calc(100% + 15px);
     height: calc(100% + 10px);
-    /* display: none; */
+    display: none;
   }
+
+  main #projects .details-card .left {
+    width: 100%;
+  }
+
+  main #projects .details-card .right {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  main #projects .details-card .right .projec-desc {
+    width: 100%;
+  }
+
+  main #projects .details-card .right .project-link {
+    width: 100%;
+  }
+
+  main #projects .details-card .right .project-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 18px 50px -17px;
+  }
+
 }
