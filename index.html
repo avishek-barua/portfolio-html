@@ -51,15 +51,17 @@
       <nav class="nav">
         <ul class="nav-btns">
           <li class="tablink" onclick="openPage('about', event)">about</li>
-          <li class="tablink" onclick="openPage('skills', event)">skills</li>
+          <li
+            class="tablink"
+            onclick="openPage('skills', event)"
+            id="defaultOpen"
+          >
+            skills
+          </li>
           <li class="tablink" onclick="openPage('experiences', event)">
             experiences
           </li>
-          <li
-            class="tablink active"
-            onclick="openPage('projects', event)"
-            id="defaultOpen"
-          >
+          <li class="tablink active" onclick="openPage('projects', event)">
             projects
           </li>
           <li class="tablink" onclick="openPage('contact', event)">
@@ -72,7 +74,9 @@
           <p>about</p>
         </div>
         <div class="content" id="skills">
-          <p>skills</p>
+          <div class="skills-cards">
+            div
+          </div>
         </div>
         <div class="content" id="experiences">
           <div class="details-card">
