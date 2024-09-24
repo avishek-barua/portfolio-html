@@ -301,6 +301,41 @@ main #projects .details-card .right .project-link a {
   color: var(--dark-text);
 }
 
+main #skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main #skills .skills-section h3 {
+  background: var(--accent-color);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--dark-text);
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 18px 5px -19px;
+  margin-bottom: 10px;
+}
+
+main #skills .skills-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+main #skills .skills-section ul li {
+  padding: 5px 10px;
+  background: var(--accent-color);
+
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 18px 5px -19px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
