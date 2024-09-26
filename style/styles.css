@@ -49,12 +49,14 @@ ul {
 
 body {
   animation: fadeInAnimation ease 2s;
+  background: #171718;
 }
 
 .container {
-  background: #171718;
   padding: 20px;
   height: 100vh;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -94,15 +96,17 @@ header .header-info h1 {
   font-size: 2rem;
   color: var(--text-color);
   font-family: "Pacifico", cursive;
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  letter-spacing: .3rem;
-  word-spacing: .5rem;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
 }
 
 header .header-info p {
   font-size: 1.25rem;
   color: var(--text-color);
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 header .social-list {
@@ -252,7 +256,6 @@ main .details-card .right::before {
   left: -20px;
 }
 
-
 main #projects .details-card .left {
   width: 20%;
 }
@@ -292,7 +295,6 @@ main #projects .details-card .right .project-link {
 }
 
 main #projects .details-card .right .project-link a {
-
   font-size: 30px;
   background: var(--accent-color);
   padding: 10px;
@@ -301,18 +303,7 @@ main #projects .details-card .right .project-link a {
   color: var(--dark-text);
 }
 
-main #skills {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 main #skills .skills-section h3 {
-  background: var(--accent-color);
-  padding: 10px;
-  border-radius: 10px;
-  color: var(--dark-text);
-  box-shadow: rgba(0, 0, 0, 0.86) 0px 18px 5px -19px;
   margin-bottom: 10px;
 }
 
@@ -320,6 +311,7 @@ main #skills .skills-section ul {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 main #skills .skills-section ul li {
@@ -334,8 +326,6 @@ main #skills .skills-section ul li {
   align-items: center;
 }
 
-
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -347,6 +337,9 @@ main #skills .skills-section ul li {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
   header img {
     height: 100px;
     width: 100px;
@@ -373,13 +366,11 @@ main #skills .skills-section ul li {
     flex-direction: column;
   }
 
-
   main .details-card .right {
     border: 1px solid var(--dark-text);
     border-radius: 10px;
     padding: 12px;
   }
-
 
   main .details-card .right::before {
     left: -10px;
@@ -414,5 +405,4 @@ main #skills .skills-section ul li {
     margin-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.86) 0px 18px 50px -17px;
   }
-
 }
