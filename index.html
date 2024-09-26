@@ -1,149 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./style/styles.css?v=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <!-- Add meaningful alt text for better accessibility -->
-        <img
-          src="./assets/avatar.jpg"
-          alt="Avatar of Avishek Barua"
-          class="avatar"
-        />
-        <div class="header-info">
-          <h1 class="name">Avishek Barua</h1>
-          <p class="designation">Designation</p>
-          <ul class="social-list">
-            <!-- Include aria-label for accessibility -->
-            <li>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                aria-label="Facebook"
-                ><ion-icon name="logo-facebook"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                aria-label="Instagram"
-                ><ion-icon name="logo-instagram"></ion-icon
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <button class="cv-btn">
-          <ion-icon name="download-outline"></ion-icon>Resume
-        </button>
-      </header>
-      <nav class="nav">
-        <ul class="nav-btns">
-          <li class="tablink" onclick="openPage('about', event)">about</li>
-          <li
-            class="tablink"
-            onclick="openPage('skills', event)"
-            id="defaultOpen"
-          >
-            skills
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./style/styles.css?v=1" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <!-- Add meaningful alt text for better accessibility -->
+      <img src="./assets/avatar.jpg" alt="Avatar of Avishek Barua" class="avatar" />
+      <div class="header-info">
+        <h1 class="name">Avishek Barua</h1>
+        <p class="designation">Designation</p>
+        <ul class="social-list">
+          <!-- Include aria-label for accessibility -->
+          <li>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><ion-icon
+                name="logo-facebook"></ion-icon></a>
           </li>
-          <li class="tablink" onclick="openPage('experiences', event)">
-            experiences
-          </li>
-          <li class="tablink active" onclick="openPage('projects', event)">
-            projects
-          </li>
-          <li class="tablink" onclick="openPage('contact', event)">
-            contact me
+          <li>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><ion-icon
+                name="logo-instagram"></ion-icon></a>
           </li>
         </ul>
-      </nav>
-      <main>
-        <div class="content active first" id="about">
-          <p>about</p>
+      </div>
+      <button class="cv-btn">
+        <ion-icon name="download-outline"></ion-icon>Resume
+      </button>
+    </header>
+    <nav class="nav">
+      <ul class="nav-btns">
+        <li class="tablink" onclick="openPage('about', event)">about</li>
+        <li class="tablink" onclick="openPage('skills', event)" id="defaultOpen">
+          skills
+        </li>
+        <li class="tablink" onclick="openPage('experiences', event)">
+          experiences
+        </li>
+        <li class="tablink active" onclick="openPage('projects', event)">
+          projects
+        </li>
+        <li class="tablink" onclick="openPage('contact', event)">
+          contact me
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="content active first" id="about">
+        <p>about</p>
+      </div>
+      <div class="content" id="skills">
+        <div class="skills-section">
+          <h3>Programming/Markup Languages</h3>
+          <ul class="skill-list">
+            <li><img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/open-std_c/open-std_c-icon~alt2.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/isocpp/isocpp-icon.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/php/php-icon.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt=""></li>
+          </ul>
         </div>
-        <div class="content" id="skills">
-          <div class="skills-cards">
+        <div class="skills-section">
+          <h3>Database</h3>
+          <ul class="skill-list">
+            <li><img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt=""></li>
+          </ul>
+        </div>
+        <div class="skills-section">
+          <h3>UI Component Libraries</h3>
+          <ul class="skill-list">
+            <li><img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt=""></li>
+          </ul>
+        </div>
+        <div class="skills-section">
+          <h3>Libraries / Frameworks / Techs</h3>
+          <ul class="skill-list">
+            <li><img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt=""></li>
+            <li><img src="https://img.icons8.com/?size=100&id=lOqoeP2Zy02f&format=png&color=000000" alt=""></li>
+          </ul>
+        </div>
+        <div class="skills-section">
+          <h3>Familiar With</h3>
+          <ul class="skill-list">
+            <li><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt=""></li>
+            <li><img src="https://www.vectorlogo.zone/logos/numpy/numpy-ar21.svg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content" id="experiences">
+        <div class="details-card">
+          <div class="left">
+            <h2>Company Name</h2>
+            <p>Job Title</p>
+          </div>
+          <div class="right">
+            <h3>Responsibilities</h3>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, dolorum!
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, dolorum!
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, dolorum!
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="content" id="experiences">
-          <div class="details-card">
-            <div class="left">
-              <h2>Company Name</h2>
-              <p>Job Title</p>
-            </div>
-            <div class="right">
-              <h3>Responsibilities</h3>
-              <ul>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem, dolorum!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem, dolorum!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem, dolorum!
-                </li>
-              </ul>
-            </div>
+        <!-- Repeat for other experiences as needed -->
+      </div>
+      <div class="content" id="projects">
+        <div class="details-card">
+          <div class="left">
+            <h2>Dubai Builders</h2>
+            <p>Tech Stack:</p>
+            <ul class="tech-stack">
+              <li>Html</li>
+              <li>Css</li>
+              <li>js</li>
+              <li>php</li>
+            </ul>
           </div>
-          <!-- Repeat for other experiences as needed -->
-        </div>
-        <div class="content" id="projects">
-          <div class="details-card">
-            <div class="left">
-              <h2>Dubai Builders</h2>
-              <p>Tech Stack:</p>
-              <ul class="tech-stack">
-                <li>Html</li>
-                <li>Css</li>
-                <li>js</li>
-                <li>php</li>
-              </ul>
+          <div class="right">
+            <div class="project-desc">
+              <h3>Description</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Placeat libero, fuga aut, eum aliquam reiciendis pariatur
+                fugit enim dicta ipsum itaque exercitationem magni voluptatum
+                ex! Eos unde voluptatem reprehenderit corrupti.
+              </p>
             </div>
-            <div class="right">
-              <div class="project-desc">
-                <h3>Description</h3>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Placeat libero, fuga aut, eum aliquam reiciendis pariatur
-                  fugit enim dicta ipsum itaque exercitationem magni voluptatum
-                  ex! Eos unde voluptatem reprehenderit corrupti.
-                </p>
-              </div>
-              <div class="project-link">
-                <a href="#"><ion-icon name="link-outline"></ion-icon></a>
-              </div>
+            <div class="project-link">
+              <a href="#"><ion-icon name="link-outline"></ion-icon></a>
             </div>
           </div>
         </div>
-        <div class="content" id="contact">
-          <p>contact</p>
-        </div>
-      </main>
-    </div>
-    <script src="./js/app.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      </div>
+      <div class="content" id="contact">
+        <p>contact</p>
+      </div>
+    </main>
+  </div>
+  <script src="./js/app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
