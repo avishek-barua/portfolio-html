@@ -1,3 +1,5 @@
 https://ionic.io/ionicons
 https://colorslurp.com/palettes
 https://colorhunt.co/palette/f7efe5e2bfd9c8a1e0674188
+https://www.vectorlogo.zone/?q=flutter
+https://devicon.dev/
